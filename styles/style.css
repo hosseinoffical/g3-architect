@@ -29,6 +29,7 @@
     border-radius: 8px;
     padding: 15px 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 .main{
     max-width: 1150px;
@@ -110,6 +111,38 @@
 .color-change{
     color: #FF900E;
 }
+/* Feature Section Start */
+.feature{
+    gap: 100px;
+}
+.feature div > .section-title{
+    border-left: 4px solid #FF900E;
+    padding: 20px;
+    font-size: 2rem;
+    margin: 0;
+}
+.feature-card {
+    padding: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.feature-card .feature-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+#experience-badge{
+    padding: 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: -80px;
+    margin-top: -80px;
+}
+#experience-year{
+    font-size: 3rem;
+    font-weight: 700;
+}
 /* Some Facts Section Start */
 .some-facts > .section-title{
     margin: 20px 0;
@@ -143,6 +176,9 @@
    margin-bottom: 20px;
 }
 /* Sponsors Section Start */
+.sponsor{
+    margin-bottom: 80px;
+}
 .sponsor-info{
     max-width: 500px;
     margin: 50px auto;
@@ -157,10 +193,23 @@
     max-width: 100%;
     filter: grayscale(100%);
 }
+
+/* Footer Section Start */
+.footer{
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+     border-radius: 8px;
+}
+.footer-content{
+    padding: 30px 0;
+    text-align: center;
+   
+}
 /*-------- Responsive Section------- */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .feature{
     flex-direction: column;
 }
     .nav-item{
@@ -182,19 +231,32 @@
      .team-features{
     margin-left: 20px;
     }
+    #experience-badge{
+        margin-left: 80px;
+    }
+    .feature img{
+        width: 100%;
+    }
    .facts-container, .sponsors-companies{
    justify-items: center;
-   gap: 20px;
+   gap: 40px;
     }
 }
 
+
 @media screen and (min-width:576px) and (max-width: 992px) {
-    .team{
+    .team, .feature{
         flex-direction: column;
     }
     .team-features{
     margin-left: 0px;
     max-width: 600px;
+    }
+     .feature img{
+        width: 100%;
+    }
+    #experience-badge{
+       margin-left: 300px;
     }
     .facts-container, .sponsors-companies{
     grid-template-columns: repeat(3, 1fr);
